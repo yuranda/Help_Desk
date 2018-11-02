@@ -1,6 +1,6 @@
 <div class="panel panel-info">
   <div class="panel-heading" style="font-size: 18px"><b>Data Tiket Masuk</b> 
-    <!-- <div class="btn btn-sm btn-primary pull-right">Tambah</div> -->
+    <div class="btn btn-sm btn-primary pull-right">Tambah</div>
   </div>
 
     <div class="panel-body">

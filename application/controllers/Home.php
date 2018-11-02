@@ -13,7 +13,7 @@ class Home extends Rsbt {
 	public function index() 
 	{
 
-		$this->page_title->push('Home', 'Selamat datang di Help Desk IT RS. Bhakti Timah');
+		$this->page_title->push('HOME', 'Selamat datang di Help Desk IT RS. Bhakti Timah');
 
 		$this->data = array(
 			'title' => "Home - Help Desk IT RS. Bhakti Timah", 

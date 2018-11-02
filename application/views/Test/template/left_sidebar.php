@@ -35,7 +35,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </li>         
         <li class="<?php echo active_link_method('index','Tiket_Selesai') ?>">
             <a href="<?php echo site_url('Tiket_Selesai') ?>">
-            <i class="fa fa-envelope"></i> <span>Tiket Selesai</span>
+            <i class="fa fa-envelope-open"></i> <span>Tiket Selesai</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-yellow">12</small>
             </span>
