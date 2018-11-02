@@ -5,7 +5,7 @@ class Tiket extends Rsbt {
 
 	public function index() 
 	{
-		$this->page_title->push('Tiket Masuk');
+		$this->page_title->push('<i class="fa fa-envelope"></i> TIKET MASUK');
 
 		$this->data = array(
 			'title' => "Tiket - Help Desk IT RS. Bhakti Timah", 
