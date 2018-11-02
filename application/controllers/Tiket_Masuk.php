@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Tiket extends Rsbt {
+class Tiket_Masuk extends Rsbt {
 
 	public function index() 
 	{
@@ -13,6 +13,6 @@ class Tiket extends Rsbt {
 			'page_title' => $this->page_title->show(),
 			
 		);
-		$this->template->view('Test/Tiket/Tiket',$this->data);
+		$this->template->view('Test/Tiket_Masuk/Tiket_Masuk',$this->data);
 	}
 }

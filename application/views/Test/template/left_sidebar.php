@@ -25,16 +25,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </span>
           </a>
         </li>        
-        <li class="<?php echo active_link_method('index','Tiket') ?>">
-            <a href="<?php echo site_url('Tiket') ?>">
+        <li class="<?php echo active_link_method('index','Tiket_Masuk') ?>">
+            <a href="<?php echo site_url('Tiket_Masuk') ?>">
             <i class="fa fa-envelope"></i> <span>Tiket Masuk</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-yellow">12</small>
             </span>
           </a>
         </li>         
-        <li class="<?php echo active_link_method('index','Tiket') ?>">
-            <a href="<?php echo site_url('Tiket') ?>">
+        <li class="<?php echo active_link_method('index','Tiket_Selesai') ?>">
+            <a href="<?php echo site_url('Tiket_Selesai') ?>">
             <i class="fa fa-envelope"></i> <span>Tiket Selesai</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-yellow">12</small>
