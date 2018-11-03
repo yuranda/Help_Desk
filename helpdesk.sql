@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 02, 2018 at 12:04 PM
--- Server version: 10.1.32-MariaDB
--- PHP Version: 5.6.36
+-- Generation Time: Nov 03, 2018 at 04:39 PM
+-- Server version: 10.1.36-MariaDB
+-- PHP Version: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -29,9 +29,53 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `category` (
-  `id_category` int(4) NOT NULL,
-  `isi_category` varchar(25) NOT NULL
+  `id_kategori` int(4) NOT NULL,
+  `isi_kategori` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `category`
+--
+
+INSERT INTO `category` (`id_kategori`, `isi_kategori`) VALUES
+(1, 'Rusak'),
+(2, 'Tidak Konek');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `t_keluar`
+--
+
+CREATE TABLE `t_keluar` (
+  `id_keluar` varchar(10) NOT NULL,
+  `id_masuk` varchar(10) NOT NULL,
+  `id_user` varchar(10) NOT NULL,
+  `solusi` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `t_masuk`
+--
+
+CREATE TABLE `t_masuk` (
+  `id_masuk` varchar(100) NOT NULL,
+  `id_user` varchar(100) DEFAULT NULL,
+  `id_kategori` varchar(20) DEFAULT NULL,
+  `deskripsi` text,
+  `foto` varchar(250) DEFAULT NULL,
+  `tanggal` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `t_masuk`
+--
+
+INSERT INTO `t_masuk` (`id_masuk`, `id_user`, `id_kategori`, `deskripsi`, `foto`, `tanggal`) VALUES
+('US 0001', '1', '2', 'safaf', 'foto-nissa-sabyan-duduk-di-toilet-bikin-heboh-181101m.jpg', '2018-11-03'),
+('US 0002', '1', '2', 'dasdads', 'download.jpg', '2018-11-03');
 
 -- --------------------------------------------------------
 
@@ -67,7 +111,19 @@ INSERT INTO `users` (`id_user`, `nama`, `username`, `password`, `alamat`, `email
 -- Indexes for table `category`
 --
 ALTER TABLE `category`
-  ADD PRIMARY KEY (`id_category`);
+  ADD PRIMARY KEY (`id_kategori`);
+
+--
+-- Indexes for table `t_keluar`
+--
+ALTER TABLE `t_keluar`
+  ADD PRIMARY KEY (`id_keluar`);
+
+--
+-- Indexes for table `t_masuk`
+--
+ALTER TABLE `t_masuk`
+  ADD PRIMARY KEY (`id_masuk`);
 
 --
 -- Indexes for table `users`
